@@ -1,13 +1,8 @@
 #include <stdio.h>
 int main() {
-    int i;
-    char a[];
-    scanf("%c",&i);
-    printf("Name: ");
-    for(i=0;i<6;i++){
-        printf("%c",a[i]);
-    }
-    printf("\n");
+    char a[100];
+    scanf("%s",&a);
+    printf("Name: %s",a);
     int b;
     scanf("%d",&b);
     printf("Age: %d\n",b);
