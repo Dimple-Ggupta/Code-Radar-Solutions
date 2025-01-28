@@ -3,11 +3,11 @@ int main() {
     int a;
     int b;
     int c;
-    int d;
+    float d;
     scanf("%d",&a);
     scanf("%d",&b);
     scanf("%d",&c);
     d = ( a + b + c) / 3;
-    printf("%d",d);
+    printf("Average: %.2f",d);
     return 0;
 }
