@@ -2,10 +2,8 @@
 int main() {
     char string[200];
     scanf("%s",&string);
-    printf("You entered: %s",string);
     char hello[200];
     scanf("%s",&hello);
-    printf("and");
-    printf("%s",hello);
+    printf("%s and %s\n",string,human);
     return 0;
 }
