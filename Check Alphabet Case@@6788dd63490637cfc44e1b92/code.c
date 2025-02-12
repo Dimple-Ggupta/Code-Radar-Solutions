@@ -8,5 +8,8 @@ if (name > 65 && name<95){
 else if (name>97 && name<122){
     printf("Lowercase");
 }
+else{
+    printf("Not an alphabet");
+}
 return 0;
 }
