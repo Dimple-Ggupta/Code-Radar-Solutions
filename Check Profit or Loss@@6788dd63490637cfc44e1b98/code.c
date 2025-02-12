@@ -3,9 +3,10 @@
 int main(){
     int a;
     int b;
-    int c = b - a;
+    int c;
     scanf("%d",&a);
     scanf("%d",&b);
+    c = b - a;
     if (c>0){
         printf("Profit");
     }
