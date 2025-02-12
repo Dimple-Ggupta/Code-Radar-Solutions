@@ -5,11 +5,10 @@ int main(){
     int b;
     scanf("%d",&a);
     scanf("%d",&b);
-    int c = a - b;
-    if (c>0){
+    if (a>b){
         printf("Profit");
     }
-    else if(c<0){
+    else if(a<b){
         printf("Loss");
     }
     else{
