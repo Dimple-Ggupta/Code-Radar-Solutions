@@ -4,7 +4,7 @@ int main() {
     char n;
     
     // Read a single character grade (with a space to consume any leftover newline)
-    scanf(" %c", &n);  // Notice the space before %c
+    scanf("%c",&n);  // Notice the space before %c
 
     switch(n) {
         case 'A':
@@ -23,7 +23,7 @@ int main() {
             printf("Fail\n");
             break;
         default:
-            printf("Invalid Grade\n");
+            printf("Invalid grade\n");
     }
 
     return 0;
