@@ -8,7 +8,6 @@ int main() {
 	scanf("%d",&a);
 	scanf("%d",&b);
 	scanf("%c",&n);
-	do{
 	   switch(n){
 	        case '+':
 	        printf("%d",a+b);
