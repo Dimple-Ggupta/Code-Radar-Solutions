@@ -22,15 +22,6 @@ int main() {
             case '/':
             printf("%d",a/b);
             break;
-	        default:
-	        printf("Exit from the given program.");
-	        break;
-	    }
-	    break;
-	     
-	}
-	while(n>0);
-	    
+       }   
 	return 0;
-
 }
