@@ -1,26 +1,37 @@
-// Your code here..
 #include <stdio.h>
 
 int main() {
-	// your code goes here
-	int a,b;
+    int a, b;
     char n;
-	scanf("%d",&a);
-	scanf("%d",&b);
-	scanf("%c",&n);
-	   switch(n){
-	        case '+':
-	        printf("%d",a+b);
-	        break;
-	        case '-':
-	        printf("%d",a-b);
-	        break;
-            case '*':
-            printf("%d",a *b);
+    
+    // Read integers a and b
+    scanf("%d", &a);
+    scanf("%d", &b);
+
+    // Read the operator, with a space to consume any leftover newline character
+    scanf(" %c", &n);  // Notice the space before %c
+
+    switch (n) {
+        case '+':
+            printf("%d\n", a + b);
             break;
-            case '/':
-            printf("%d",a/b);
+        case '-':
+            printf("%d\n", a - b);
             break;
-       }   
-	return 0;
+        case '*':
+            printf("%d\n", a * b);
+            break;
+        case '/':
+            if (b != 0) { // Check for division by zero
+                printf("%d\n", a / b);
+            } else {
+                printf("Error! Division by zero.\n");
+            }
+            break;
+        default:
+            printf("Invalid operator\n");
+            break;
+    }
+
+    return 0;
 }
