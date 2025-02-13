@@ -1,26 +1,31 @@
 #include <stdio.h>
-int main (){
+
+int main() {
     char n;
-    scanf("%c",&n);
-    switch(n){
+    
+    // Read a single character grade (with a space to consume any leftover newline)
+    scanf(" %c", &n);  // Notice the space before %c
+
+    switch(n) {
         case 'A':
-        printf("Excellent");
-        break;
+            printf("Excellent\n");
+            break;
         case 'B':
-        printf("Good");
-        break;
+            printf("Good\n");
+            break;
         case 'C':
-        printf("Average");
-        break;
+            printf("Average\n");
+            break;
         case 'D':
-        printf("Below Average");
-        break;
+            printf("Below Average\n");
+            break;
         case 'F':
-        printf("Fail");
-        break;
+            printf("Fail\n");
+            break;
         default:
-        printf("Invalid Grade");
-        break;
+            printf("Invalid Grade\n");
+            break;
     }
+
     return 0;
 }
