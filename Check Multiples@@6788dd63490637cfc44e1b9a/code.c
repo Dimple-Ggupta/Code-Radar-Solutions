@@ -2,7 +2,7 @@
 int main(){
     int a;
     int b;
-    if (a % b ==0){
+    if (a % b =0){
         printf("Yes");
     }
     else{
