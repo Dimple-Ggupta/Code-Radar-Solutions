@@ -22,11 +22,7 @@ int main() {
             printf("%d\n", a * b);
             break;
         case '/':
-            if (b != 0) { // Check for division by zero
                 printf("%d\n", a / b);
-            } else {
-                printf("Error! Division by zero.\n");
-            }
             break;
         default:
             printf("Invalid operator\n");
