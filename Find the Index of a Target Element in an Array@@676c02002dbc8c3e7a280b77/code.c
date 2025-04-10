@@ -1,7 +1,8 @@
 #include <stdio.h>
 void findIndex(int arr[], int N, int T) {
     //int found = 0;
-    for (int i = 0; i < N; i++) {
+    int i;
+    for (i = 0; i < N; i++) {
         if (arr[i] == T) {
             return i;
         }
