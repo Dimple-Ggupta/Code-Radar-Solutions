@@ -10,7 +10,7 @@ int findIndex(int arr[], int N, int T) {
     }
     return -1;
     }
-}
+
 int main() {
     int N, T;
     scanf("%d", &N);
