@@ -1,10 +1,8 @@
 #include <stdio.h>
-
-// Function to find and print indices of target element (or -1 if not found)
-void findIndex(int arr[], int n, int target) {
+void findIndex(int arr[], int n, int T) {
     int found = 0;
     for (int i = 0; i < n; i++) {
-        if (arr[i] == target) {
+        if (arr[i] == T) {
             printf("%d ", i);
             found = 1;
         }
@@ -14,14 +12,14 @@ void findIndex(int arr[], int n, int target) {
     }
 }
 int main() {
-    int n, target;
+    int n, T;
     scanf("%d", &n);
     int arr[n]; 
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
-    scanf("%d", &target);
-    findIndex(arr, n, target);
+    scanf("%d", &T);
+    findIndex(arr, n, T);
     
     return 0;
 }
