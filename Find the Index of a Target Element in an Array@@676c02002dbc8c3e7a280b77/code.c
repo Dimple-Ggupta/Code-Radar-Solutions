@@ -20,6 +20,5 @@ int main() {
     }
     scanf("%d", &T);
     findIndex(arr, n, T);
-    
     return 0;
 }
