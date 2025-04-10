@@ -1,24 +1,23 @@
 #include <stdio.h>
-void findIndex(int arr[], int n, int T) {
-    int found = 0;
-    for (int i = 0; i < n; i++) {
+void findIndex(int arr[], int N, int T) {
+    //int found = 0;
+    for (int i = 0; i < N; i++) {
         if (arr[i] == T) {
-            printf("%d ",i);
-            found = 1;
+            return i;
         }
+
     }
-    if (!found) {
-        printf("-1");
+    return -1;
     }
 }
 int main() {
-    int n, T;
-    scanf("%d", &n);
-    int arr[n]; 
-    for (int i = 0; i < n; i++) {
+    int N, T;
+    scanf("%d", &N);
+    int arr[N]; 
+    for (int i = 0; i < N; i++) {
         scanf("%d", &arr[i]);
     }
     scanf("%d", &T);
-    findIndex(arr, n, T);
+    findIndex(arr, N, T);
     return 0;
 }
