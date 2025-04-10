@@ -19,6 +19,7 @@ int main() {
         scanf("%d", &arr[i]);
     }
     scanf("%d", &T);
-    findIndex(arr, N, T);
+    int index=findIndex(arr,N,T);
+    printf("%d",index);
     return 0;
 }
